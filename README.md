@@ -8,7 +8,7 @@ Hello world! Welcome to MG#Core, a cell-based 3D simulator of biological develop
 
 * The parent MG# project enables anyone with minimum or no programming experience to run biological simulations and visualise the results. 
 * MG#Core is the computational engine of MG#. It runs simulations and logs results into (custom) MG files and/or VTK files.
-* MG#Viewer is a Unity(https://unity.com/) based viewer allowing 3D visualisation of MG log files. VTK files can be viewed with third party tools like ParaView(https://www.paraview.org/).
+* MG#Viewer (https://github.com/guijoe/MGSharpViewer) is a Unity (https://unity.com/) based viewer allowing 3D visualisation of MG log files. VTK files can be viewed with third party tools like ParaView (https://www.paraview.org/).
 
 ### Running a simulation with MG# ###
 
