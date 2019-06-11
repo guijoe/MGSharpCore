@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>MGSharp.Invagination</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\GeometricPrimitives\Bounds2D.cs" />
+    <Compile Include="src\BiologicalEntities\CellPopulation.cs" />
+    <Compile Include="src\Helpers\CellProvider.cs" />
+    <Compile Include="src\MIConvexHull\Collections.cs" />
+    <Compile Include="src\MIConvexHull\Constants.cs" />
+    <Compile Include="src\MIConvexHull\ConvexFace.cs" />
+    <Compile Include="src\MIConvexHull\ConvexHull.cs" />
+    <Compile Include="src\MIConvexHull\ConvexHullAlgorithm.Initialize.cs" />
+    <Compile Include="src\MIConvexHull\ConvexHullAlgorithm.MainLoop.cs" />
+    <Compile Include="src\GeometricPrimitives\HexagonalCylinder44.cs" />
+    <Compile Include="src\GeometricPrimitives\Icosahedron42.cs" />
+    <Compile Include="src\MIConvexHull\DataModel.cs" />
+    <Compile Include="src\MIConvexHull\DelaunayTrianglationInternal.cs" />
+    <Compile Include="src\MIConvexHull\DelaunayTriangulation.cs" />
+    <Compile Include="src\GeometricPrimitives\CustomHexagonal.cs" />
+    <Compile Include="src\GeometricPrimitives\Image2D.cs" />
+    <Compile Include="src\MIConvexHull\IVertex.cs" />
+    <Compile Include="src\MIConvexHull\MathHelper.cs" />
+    <Compile Include="src\GeometricPrimitives\MGConvexHull.cs" />
+    <Compile Include="src\MIConvexHull\MIFace.cs" />
+    <Compile Include="src\MIConvexHull\MIVertex2D.cs" />
+    <Compile Include="src\MIConvexHull\MIVertex.cs" />
+    <Compile Include="src\MIConvexHull\ObjectManager.cs" />
+    <Compile Include="src\Helpers\Hungarian.cs" />
+    <Compile Include="src\Helpers\Metrics.cs" />
+    <Compile Include="src\Helpers\PersistantMetrics.cs" />
+    <Compile Include="src\Helpers\PersistantVectorFields.cs" />
+    <Compile Include="src\Helpers\Randomizer.cs" />
+    <Compile Include="src\Helpers\BinarySeralizer.cs" />
+    <Compile Include="src\GeometricPrimitives\Ellipsoid.cs" />
+    <Compile Include="src\GeometricPrimitives\HexagonalCylinder42.cs" />
+    <Compile Include="src\RosetteFormation.cs" />
+    <Compile Include="src\Invagination.cs" />
+    <Compile Include="src\Helpers\MeshSplitter.cs" />
+    <Compile Include="src\Helpers\CSVSeralizer.cs" />
+    <Compile Include="src\GeometricPrimitives\Cylinder34.cs" />
+    <Compile Include="src\GeometricPrimitives\Edge.cs" />
+    <Compile Include="src\GeometricPrimitives\EdgeSet.cs" />
+    <Compile Include="src\BiologicalEntities\EnumTissue.cs" />
+    <Compile Include="src\GeometricPrimitives\Face.cs" />
+    <Compile Include="src\GeometricPrimitives\FaceSet.cs" />
+    <Compile Include="src\Helpers\Helper.cs" />
+    <Compile Include="src\GeometricPrimitives\Mesh.cs" />
+    <Compile Include="src\BiologicalEntities\MGCell.cs" />
+    <Compile Include="src\MGModels\MGModel.cs" />
+    <Compile Include="src\BiologicalEntities\Nucleus.cs" />
+    <Compile Include="src\Helpers\Persistant.cs" />
+    <Compile Include="src\Helpers\PersistantNumbers.cs" />
+    <Compile Include="src\Helpers\PersistantVertex.cs" />
+    <Compile Include="src\GeometricPrimitives\Plane.cs" />
+    <Compile Include="src\GeometricPrimitives\Set.cs" />
+    <Compile Include="src\Cleavage.cs" />
+    <Compile Include="src\Simulator.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\GeometricPrimitives\SparseMatrix.cs" />
+    <Compile Include="src\Helpers\BinaryRW.cs" />
+    <Compile Include="src\Helpers\Mathf.cs" />
+    <Compile Include="src\BiologicalEntities\Tissue.cs" />
+    <Compile Include="src\GeometricPrimitives\Bounds.cs" />
+    <Compile Include="src\MIConvexHull\Triangulation.cs" />
+    <Compile Include="src\MIConvexHull\TriangulationCell.cs" />
+    <Compile Include="src\GeometricPrimitives\Vector.cs" />
+    <Compile Include="src\GeometricPrimitives\Vertex.cs" />
+    <Compile Include="src\GeometricPrimitives\VertexSet.cs" />
+    <Compile Include="src\MIConvexHull\VoronoiEdge.cs" />
+    <Compile Include="src\MIConvexHull\VoronoiMesh.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
