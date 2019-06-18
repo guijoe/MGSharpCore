@@ -17,16 +17,16 @@ Hello world! Welcome to MG#Core, a cell-based 3D simulator of biological develop
 * A simulation can only be runned from a "Main" code file (file with the "Main" function). The "Main" file must be compiled, and the resulting executable file runned. This goes without saying that the path to the file must be referenced, either by being in its parent directory or by explicitly specifying it in the file path.
     
 #### Windows
-	dotnet run
-	invagination.exe
+	dotnet build
+	bin/debug/invagination.exe
 	
 #### Linux 
-	dotnet run
-	./invagination
+	dotnet build
+	./bin/debug/invagination
 	
 #### Mac OS 
-	dotnet run
-	./invagination
+	dotnet build
+	./bin/debug/invagination
 
 ### Designing and programming a simulation ###
 
