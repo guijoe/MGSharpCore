@@ -2,7 +2,7 @@
 
 Hello world! Welcome to MG#Core, a cell-based 3D simulator of biological development written in C#.
 
-![Alt text](https://github.com/guijoe/MGSharpCore/blob/master/images/Invagination.GIF "Set Model")
+![Alt text](https://github.com/guijoe/MGSharpCore/blob/master/images/Invagination.GIF "Invagination")
 
 ### Brief Description ###
 
