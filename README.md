@@ -18,15 +18,15 @@ Hello world! Welcome to MG#Core, a cell-based 3D simulator of biological develop
     
 #### Windows
 	dotnet build
-	bin/debug/invagination.exe
+	dotnet run
 	
 #### Linux 
 	dotnet build
-	./bin/debug/invagination
+	dotnet run
 	
 #### Mac OS 
 	dotnet build
-	./bin/debug/invagination
+	dotnet run
 
 ### Designing and programming a simulation ###
 
